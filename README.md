@@ -5,7 +5,7 @@ Projeto desenvolvido como teste prático pra empresa Develcode. Consiste de uma 
 ## Como Executar
 
 - Backend:
-Acesse a pasta backend no terminal.
+Acesse a pasta backend no terminal.<br/>
 Instale as dependencias com o comando: npm install
 Para executar o servidor digite o comando: npm run dev
 Ele poderá ser acessado através do link https://localhost:3000
