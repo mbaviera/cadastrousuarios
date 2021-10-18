@@ -20,7 +20,7 @@ Para gerar um apk execute o comando: react-native run-android --variant
 ## Troubleshooting
 
 - Configuração do hostname e porta no backend<br/>
-  Acesso a pasta backend e o arquivo index.js, e altera as variáveis hostname e port. Por padrão esta setado hostname = localhost" e port = "3000"
+  Acesse o arquivo index.js em 'backend > src > index', e altera as variáveis hostname e port. Por padrão esta setado hostname = localhost" e port = "3000"
   
-- Configuração do hostname e porta no frontend<br/>
+- Configuração da URL frontend<br/>
   Acesso o arquivo Api.js em 'frontend > testedevelcode > src > services', e altera a variável baseURL. Por padrão esta setado baseURL: 'http://localhost:3000',
