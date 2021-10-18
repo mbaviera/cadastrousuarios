@@ -15,10 +15,9 @@ export default function Details({navigation, route}) {
   const [imageNew, setImage] = useState('');
 
   useEffect(() => {
-    const image1 = Buffer.from(fotoUser).toString('base64');
-    const image2 = Buffer.from(image1, 'base64').toString('ascii');
-    console.log('emfilesys: ' + image2);
-    setImage(image2);
+    const image1 = Buffer.from(fotoUser).toString('ascii');
+    console.log('emfilesys: ' + image1);
+    setImage(image1);
   }, []);
 
   function deletar(id) {

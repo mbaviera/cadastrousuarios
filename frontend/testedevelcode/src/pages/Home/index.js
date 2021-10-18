@@ -8,6 +8,7 @@ import Moment from 'moment';
 import Icon from 'react-native-vector-icons/FontAwesome5';
 import {styles} from './styles';
 import {useIsFocused} from '@react-navigation/native';
+import {Buffer} from 'buffer';
 
 export default function Home({navigation}) {
   const [data, setUser] = useState([]);
@@ -30,7 +31,7 @@ export default function Home({navigation}) {
 
   function filterSearch(text) {
     setFilteredData(data.filter(i => i.nome.includes(text)));
-  }  
+  }   
 
   return (
     <View style={styles.container}>
@@ -77,7 +78,7 @@ export default function Home({navigation}) {
                 }>
                 <View style={styles.row}>
                   <Image
-                    //source={{uri: item.image2}}
+                    source={{ uri: Buffer.from(item.foto).toString('ascii') }}
                     style={styles.pic}
                   />
                   <View>

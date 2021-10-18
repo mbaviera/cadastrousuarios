@@ -2,9 +2,9 @@ CREATE DATABASE firstapi;
 
 CREATE TABLE users (
     id SERIAL PRIMARY KEY,
-    nome VARCHAR(100) NOT NULL,
+    nome VARCHAR(100),
     nascimento DATE,
-    foto VARCHAR(100)
+    foto BYTEA
 );
 
 INSERT INTO users ( nome, nascimento, foto)

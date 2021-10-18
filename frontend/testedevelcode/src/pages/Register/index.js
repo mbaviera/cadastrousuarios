@@ -20,7 +20,6 @@ export default function Register({navigation}) {
   const [visible, setVisible] = useState(false);
   const [nome, setNome] = useState('');
   const [nascimento, setData] = useState('');
-  const [foto, setFoto] = useState('');
 
   const onImageLibraryPress = useCallback(() => {
     const options = {
@@ -43,9 +42,9 @@ export default function Register({navigation}) {
   const uri = pickerResponse?.assets && pickerResponse.assets[0].uri;
 
   function saveData(nome, nascimento, foto) {
-    if (nome === '' || nascimento === '') {
-      Alert.alert('','Preencha Os Campos!');
-    } else {      
+    if (nome === '' || nascimento === '' || foto === undefined) {
+      Alert.alert('','Verifique os campos FOTO, NOME e DATA!');
+    } else { 
       Api.post('/users', {nome, nascimento, foto})
         .then(response => {
           console.log(response.data);

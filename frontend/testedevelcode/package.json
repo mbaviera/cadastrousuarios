@@ -25,7 +25,8 @@
     "react-native-modal": "^13.0.0",
     "react-native-safe-area-context": "^3.3.2",
     "react-native-splash-screen": "^3.2.0",
-    "react-native-vector-icons": "^8.1.0"
+    "react-native-vector-icons": "^8.1.0",
+    "text-decoding": "^1.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.15.8",
