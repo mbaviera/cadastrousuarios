@@ -5,13 +5,13 @@ Consiste de uma aplicação React Native para CRUD de usuários, com backend des
 
 ## Como Executar
 
-- Backend:
+- Backend:<br/>
 Acesse a pasta backend no terminal.<br/>
 Instale as dependencias com o comando: npm install<br/>
 Para executar o servidor digite o comando: npm run dev<br/>
 Ele poderá ser acessado através do link https://localhost:3000
 
-- FrontEnd:
+- FrontEnd:<br/>
 Acesse a pasta 'testedevelcode' no terminal.<br/>
 Instale as dependencias com o comando: npm install<br/>
 Para rodar em modo debug execute o comando: react-native run-android <br/>
