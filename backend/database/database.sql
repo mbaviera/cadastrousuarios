@@ -1,4 +1,4 @@
-CREATE DATABASE firstapi;
+CREATE DATABASE testedevelcode;
 
 CREATE TABLE users (
     id SERIAL PRIMARY KEY,

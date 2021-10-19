@@ -64,26 +64,4 @@ export const styles = StyleSheet.create({
       flexDirection:'row',
       margin:55
     },
-    buttonText: {
-      //textos dos botoes
-      fontSize:18,
-      fontWeight: 'bold',
-      color: "#000000",
-      textAlign:'center'
-    },
-    pedidosBtn: {
-      //botao de pedido
-      width: 100,
-      backgroundColor: '#dbdbdb',
-      borderRadius: 25,
-      height: 50,
-      justifyContent: 'center',      
-    },
-    iconTouchable: {
-      //icone cheveron
-      position: 'absolute',
-      color: '#636363',
-      alignSelf:'center',
-      fontSize:25
-    },
   });

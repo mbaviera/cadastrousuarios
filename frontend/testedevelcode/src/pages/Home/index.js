@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {FlatList, Image, ScrollView, StatusBar, Text, View} from 'react-native';
-import {ListItem, Avatar} from 'react-native-elements';
+import {FlatList, Image, StatusBar, Text, View} from 'react-native';
 import {TouchableOpacity} from 'react-native-gesture-handler';
 import SearchHeader from '../../components/SearchHeader';
 import Api from '../../services/Api';
@@ -31,7 +30,7 @@ export default function Home({navigation}) {
 
   function filterSearch(text) {
     setFilteredData(data.filter(i => i.nome.includes(text)));
-  }   
+  }
 
   return (
     <View style={styles.container}>
@@ -42,23 +41,6 @@ export default function Home({navigation}) {
         placeholderSearch={'Filtrar Por Nome'}
         keyboardTypeSearch={'default'}
       />
-
-      {filteredData.length === 0 && (
-        <View
-          style={{
-            alignItems: 'center',
-            justifyContent: 'center',
-            marginTop: 50,
-          }}>
-          <Image
-            source={require('../../../assets/notfound.png')}
-            style={{
-              width: 250,
-              height: 250,
-            }}
-          />
-        </View>
-      )}
 
       {filteredData.length > 0 && (
         <View style={{flex: 1}}>
@@ -78,7 +60,7 @@ export default function Home({navigation}) {
                 }>
                 <View style={styles.row}>
                   <Image
-                    source={{ uri: Buffer.from(item.foto).toString('ascii') }}
+                    source={{uri: Buffer.from(item.foto).toString('ascii')}}
                     style={styles.pic}
                   />
                   <View>
@@ -102,6 +84,24 @@ export default function Home({navigation}) {
           />
         </View>
       )}
+
+      {filteredData.length === 0 && (
+        <View
+          style={{
+            alignItems: 'center',
+            justifyContent: 'center',
+            marginTop: 50,
+          }}>
+          <Image
+            source={require('../../../assets/notfound.png')}
+            style={{
+              width: 250,
+              height: 250,
+            }}
+          />
+        </View>
+      )}
+
       <View style={styles.viewPrimaria}>
         <View style={styles.viewSecundaria}>
           <TouchableOpacity onPress={() => navigation.navigate('Register')}>
