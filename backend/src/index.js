@@ -2,7 +2,7 @@
 const express = require('express');
 const app = express();
 const cors = require('cors')
-const hostname = "192.168.15.7";
+const hostname = "localhost";
 const port = "3000";
 
 //middlewares 
