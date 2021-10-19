@@ -5,6 +5,10 @@ Consiste de uma aplicação React Native para CRUD de usuários, com backend des
 
 ## Como Executar
 
+- Banco<br/>
+  Postgresql<br/>
+  Há um backup dentro da pasta 'banco', ou execute as QUERIES mostradas em 'backend > database > database.sql'
+
 - Backend:<br/>
 Acesse a pasta backend no terminal.<br/>
 Instale as dependencias com o comando: npm install<br/>
@@ -15,7 +19,7 @@ Ele poderá ser acessado através do link https://localhost:3000
 Acesse a pasta 'testedevelcode' no terminal.<br/>
 Instale as dependencias com o comando: npm install<br/>
 Para rodar em modo debug execute o comando: react-native run-android <br/>
-Para gerar um apk execute o comando: react-native run-android --variant
+Para gerar um apk execute o comando: react-native run-android --variant-release
 
 ## Troubleshooting
 
