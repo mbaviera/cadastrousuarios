@@ -7,7 +7,7 @@ CREATE TABLE users (
     foto BYTEA
 );
 
-INSERT INTO users ( nome, nascimento, foto)
+/* INSERT INTO users ( nome, nascimento, foto)
     VALUES ( 'Mateus Rocha', '1991-09-12', 'teste');
 
-select * from users;
+select * from users; */
