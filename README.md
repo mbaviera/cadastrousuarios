@@ -1,13 +1,13 @@
 # Escopo e objetivo
 
-Projeto desenvolvido como teste prático pra empresa Develcode. <br/>
+Projeto desenvolvido como desafio técnico. <br/>
 Consiste de uma aplicação React Native para CRUD de usuários, com backend desenvolvido em Node.js e banco de dados Postgresql.<br/><br/>
 
-<!-- <p align="center">
+<p align="center">
   <img src="https://i.ibb.co/8XfRMQw/Screenshot-2021-10-19-09-50-50-552-com-testedevelcode.jpg" width="300" title="hover text">
   <img src="https://i.ibb.co/Prp9Sxd/1634647881348.jpg" width="300" title="hover text">
   <img src="https://i.ibb.co/SRznbMn/1634647881331.jpg" width="300" title="hover text">
-</p> -->
+</p> 
 
 ## Como Executar
 
